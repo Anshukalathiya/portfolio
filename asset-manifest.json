@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b22dfdb2.css",
-    "main.js": "/portfolio/static/js/main.c516ba03.js",
+    "main.css": "/portfolio/static/css/main.93e9b0b3.css",
+    "main.js": "/portfolio/static/js/main.316e4dbb.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/Transcript-ME.pdf": "/portfolio/static/media/Transcript-ME.3cf5d37ad91df49d621e.pdf",
     "static/media/Developer.png": "/portfolio/static/media/Developer.fe0a0f84e7bec67cf62c.png",
@@ -16,7 +16,9 @@
     "static/media/Ruby.png": "/portfolio/static/media/Ruby.a41aeb7b216409732de8.png",
     "static/media/AWS.png": "/portfolio/static/media/AWS.7d453feb59b1031a04f9.png",
     "static/media/Postgresql.png": "/portfolio/static/media/Postgresql.e20228f7fb92f41cd4d2.png",
+    "static/media/Angular.png": "/portfolio/static/media/Angular.0cebc8c68a64f305193c.png",
     "static/media/ObjectDetection.png": "/portfolio/static/media/ObjectDetection.d57072bdd3df8e70394c.png",
+    "static/media/Java.png": "/portfolio/static/media/Java.2d0b32f5fe08b632129b.png",
     "static/media/Sevi.png": "/portfolio/static/media/Sevi.97db34b65e984a88db61.png",
     "static/media/Git.png": "/portfolio/static/media/Git.83654d03e4006d6857ed.png",
     "static/media/Hadoop.jpg": "/portfolio/static/media/Hadoop.892e506e57950d4a4678.jpg",
@@ -24,6 +26,7 @@
     "static/media/SentimentAnalysis.jpg": "/portfolio/static/media/SentimentAnalysis.9753dc376279b650ba0c.jpg",
     "static/media/Springboot.png": "/portfolio/static/media/Springboot.73f65a38b169dbadcf98.png",
     "static/media/Python.png": "/portfolio/static/media/Python.bfbd354d2ac2bc611204.png",
+    "static/media/Javascript.png": "/portfolio/static/media/Javascript.d96d70417978d615acb1.png",
     "static/media/Oracle.jpg": "/portfolio/static/media/Oracle.3a37b083a1f472112341.jpg",
     "static/media/Node.png": "/portfolio/static/media/Node.e328955d6bbbf3ebc72b.png",
     "static/media/Tailwind.png": "/portfolio/static/media/Tailwind.75da6cbc57006f9476c2.png",
@@ -39,12 +42,12 @@
     "static/media/Nextjs.svg": "/portfolio/static/media/Nextjs.e3c042b9d9d809ebb67e9bc6e1e5f70d.svg",
     "static/media/MongoDB.svg": "/portfolio/static/media/MongoDB.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/portfolio/index.html",
-    "main.b22dfdb2.css.map": "/portfolio/static/css/main.b22dfdb2.css.map",
-    "main.c516ba03.js.map": "/portfolio/static/js/main.c516ba03.js.map",
+    "main.93e9b0b3.css.map": "/portfolio/static/css/main.93e9b0b3.css.map",
+    "main.316e4dbb.js.map": "/portfolio/static/js/main.316e4dbb.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b22dfdb2.css",
-    "static/js/main.c516ba03.js"
+    "static/css/main.93e9b0b3.css",
+    "static/js/main.316e4dbb.js"
   ]
 }
