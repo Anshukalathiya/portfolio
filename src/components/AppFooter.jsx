@@ -1,8 +1,8 @@
 const AppFooter = () => {
     return (
-        <footer class="bg-white">
-            <div class="px-4 py-6 bg-gray-200 md:flex items-center justify-between text-center">
-                <span class="text-sm text-gray-500 sm:text-center">
+        <footer class="bg-gray-200 dark:bg-gray-500">
+            <div class="px-4 py-6 md:flex items-center justify-between text-center">
+                <span class="text-sm text-gray-500 dark:text-gray-100 sm:text-center">
                     ©2024 Anshuman_Kalathiya.Portfolio
                 </span>
 
