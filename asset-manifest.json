@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.93e9b0b3.css",
-    "main.js": "/portfolio/static/js/main.316e4dbb.js",
+    "main.css": "/portfolio/static/css/main.7e976c54.css",
+    "main.js": "/portfolio/static/js/main.4c36b418.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/Transcript-ME.pdf": "/portfolio/static/media/Transcript-ME.3cf5d37ad91df49d621e.pdf",
     "static/media/Developer.png": "/portfolio/static/media/Developer.fe0a0f84e7bec67cf62c.png",
@@ -14,6 +14,7 @@
     "static/media/Graphql.png": "/portfolio/static/media/Graphql.f2e5f3f0662cca7dbd10.png",
     "static/media/Reactjs.png": "/portfolio/static/media/Reactjs.8a6fc0a24a800d1e0f4a.png",
     "static/media/Ruby.png": "/portfolio/static/media/Ruby.a41aeb7b216409732de8.png",
+    "static/media/Nextjs.png": "/portfolio/static/media/Nextjs.a3493da4a3d1c902077b.png",
     "static/media/AWS.png": "/portfolio/static/media/AWS.7d453feb59b1031a04f9.png",
     "static/media/Postgresql.png": "/portfolio/static/media/Postgresql.e20228f7fb92f41cd4d2.png",
     "static/media/Angular.png": "/portfolio/static/media/Angular.0cebc8c68a64f305193c.png",
@@ -21,33 +22,32 @@
     "static/media/Java.png": "/portfolio/static/media/Java.2d0b32f5fe08b632129b.png",
     "static/media/Sevi.png": "/portfolio/static/media/Sevi.97db34b65e984a88db61.png",
     "static/media/Git.png": "/portfolio/static/media/Git.83654d03e4006d6857ed.png",
-    "static/media/Hadoop.jpg": "/portfolio/static/media/Hadoop.892e506e57950d4a4678.jpg",
     "static/media/Unemployment.png": "/portfolio/static/media/Unemployment.91d748c6d51ad8f12861.png",
     "static/media/SentimentAnalysis.jpg": "/portfolio/static/media/SentimentAnalysis.9753dc376279b650ba0c.jpg",
     "static/media/Springboot.png": "/portfolio/static/media/Springboot.73f65a38b169dbadcf98.png",
     "static/media/Python.png": "/portfolio/static/media/Python.bfbd354d2ac2bc611204.png",
     "static/media/Javascript.png": "/portfolio/static/media/Javascript.d96d70417978d615acb1.png",
-    "static/media/Oracle.jpg": "/portfolio/static/media/Oracle.3a37b083a1f472112341.jpg",
+    "static/media/Express.png": "/portfolio/static/media/Express.5f51951052eb032533ae.png",
     "static/media/Node.png": "/portfolio/static/media/Node.e328955d6bbbf3ebc72b.png",
     "static/media/Tailwind.png": "/portfolio/static/media/Tailwind.75da6cbc57006f9476c2.png",
     "static/media/SQL.png": "/portfolio/static/media/SQL.7d8d571e5629923eaf74.png",
+    "static/media/Oracle.png": "/portfolio/static/media/Oracle.dafbb456e6f703bafe94.png",
     "static/media/UoG.png": "/portfolio/static/media/UoG.03ee2f751dabb8a8a090.png",
+    "static/media/Hadoop.svg": "/portfolio/static/media/Hadoop.0a098738e19b397381cfa7819d7df57c.svg",
     "static/media/Azure.png": "/portfolio/static/media/Azure.a971ea3ed33a7c90fe12.png",
     "static/media/AnomalyDetection.jpg": "/portfolio/static/media/AnomalyDetection.6949a8c271c4a962b418.jpg",
     "static/media/Bootstrap.png": "/portfolio/static/media/Bootstrap.268c4375260420e8d982.png",
     "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/Express.png": "/portfolio/static/media/Express.e3d4f9e5c8b469e45838.png",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/Nextjs.svg": "/portfolio/static/media/Nextjs.e3c042b9d9d809ebb67e9bc6e1e5f70d.svg",
     "static/media/MongoDB.svg": "/portfolio/static/media/MongoDB.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
     "index.html": "/portfolio/index.html",
-    "main.93e9b0b3.css.map": "/portfolio/static/css/main.93e9b0b3.css.map",
-    "main.316e4dbb.js.map": "/portfolio/static/js/main.316e4dbb.js.map",
+    "main.7e976c54.css.map": "/portfolio/static/css/main.7e976c54.css.map",
+    "main.4c36b418.js.map": "/portfolio/static/js/main.4c36b418.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93e9b0b3.css",
-    "static/js/main.316e4dbb.js"
+    "static/css/main.7e976c54.css",
+    "static/js/main.4c36b418.js"
   ]
 }
