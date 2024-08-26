@@ -7,7 +7,7 @@ import Bootstrap from '../pics/Bootstrap.png';
 import Express from '../pics/Express.png';
 import Graphql from '../pics/Graphql.png';
 import MongoDB from '../pics/MongoDB.svg';
-import Nextjs from '../pics/Nextjs.svg';
+import Nextjs from '../pics/Nextjs.png';
 import Node from '../pics/Node.png';
 import Python from '../pics/Python.png';
 import Reactjs from '../pics/Reactjs.png';
@@ -20,9 +20,9 @@ import Angular from '../pics/Angular.png';
 import Java from '../pics/Java.png';
 import Javascript from '../pics/Javascript.png';
 import Ruby from '../pics/Ruby.png';
-import Oracle from '../pics/Oracle.jpg';
+import Oracle from '../pics/Oracle.png';
 import Git from '../pics/Git.png';
-import Hadoop from '../pics/Hadoop.jpg';
+import Hadoop from '../pics/Hadoop.svg';
 
 const SkillSet = () => {
     const responsive = {

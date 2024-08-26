@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import { Fade, Zoom, AttentionSeeker } from "react-awesome-reveal";
+import { Zoom, AttentionSeeker } from "react-awesome-reveal";
 import AppHeader from './components/AppHeader';
 import About from './components/About';
 import Experience from './components/Experience';
