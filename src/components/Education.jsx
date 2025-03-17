@@ -25,7 +25,7 @@ const Education = () => {
                             university="University of Guelph"
                             course="Master of Computer Engineering"
                             image={<img src={UoG} class="m-auto rounded-full" alt="University of Guelph" />}
-                            timeline="September 2022 - January 2024"
+                            timeline="September 2022 - June 2024"
                             score="GPA - 3.6/4.0"
                             transcript={ME} />
 

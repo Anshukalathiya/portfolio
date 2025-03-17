@@ -5,12 +5,12 @@ const About = () => {
     return (
         <div id="about" class="flex flex-row pb-10">
             <div class="lg:basis-1/2 lg:flex md:items-center m-8 md:m-auto">
-                <div class="uppercase text-lg md:text-xl lg:text-3xl mx-1 md:mx-10 lg:mx-20 font-bold">
-                    <p class="pb-8 text-black dark:text-white">
-                        Hello<span className="animate-wave md:text-5xl">  👋,</span> <br />  
+                <div class="uppercase mx-1 md:mx-10 lg:mx-20 font-bold">
+                    <p class="pb-8 text-black dark:text-white text-base md:text-lg lg:text-xl">
+                        Hello<span className="animate-wave md:text-5xl">  👋</span>, I am<br />  
                     </p>
-                    <h2 class="text-black dark:text-white">I am Anshuman</h2><br />
-                    <p class="text-orange-500">
+                    <h2 class="text-black dark:text-white text-2xl md:text-3xl lg:text-5xl">Anshuman Kalathiya</h2><br />
+                    <p class="text-orange-500 text-base md:text-lg lg:text-xl">
                         <TypeAnimation
                             sequence={[
                                 'a Full Stack Developer !',
