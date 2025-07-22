@@ -36,9 +36,9 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" class="m-5 md:m-7 lg:m-20 pt-5 flex justify-center">
-            <section class="bg-white dark:bg-black rounded-xl sm:w-screen md:w-3/4 lg:w-2/3 shadow-lg">
-                <div class="py-8 lg:py-16 px-16 mx-auto max-w-screen-md">
+        <div id="contact" class="m-4 md:m-7 lg:m-20 pt-5 flex justify-center">
+            <section class="bg-white dark:bg-black rounded-xl w-screen md:w-3/4 lg:w-2/3 shadow-lg">
+                <div class="py-8 lg:py-16 px-8 md:px-16 mx-auto max-w-screen-md">
                     <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-black dark:text-white">Get In Touch</h2>
                     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Want to connect with me?</p>
 

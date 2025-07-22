@@ -4,14 +4,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.13.3",
+    "@botpress/webchat": "^3.1.0",
+    "@react-spring/core": "^10.0.1",
+    "@react-spring/three": "^10.0.1",
+    "@react-spring/web": "^10.0.1",
+    "@react-three/drei": "^9.99.5",
+    "@react-three/fiber": "^8.15.19",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@tsparticles/all": "^3.8.1",
-    "@tsparticles/react": "^3.0.0",
-    "aos": "^3.0.0-beta.6",
     "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.14",
     "react-dark-mode-toggle": "^0.2.0",
@@ -22,7 +21,7 @@
     "react-scripts": "5.0.1",
     "react-type-animation": "^3.2.0",
     "sweetalert2": "^11.12.4",
-    "web-vitals": "^2.1.4"
+    "three": "^0.161.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import { Zoom, AttentionSeeker } from "react-awesome-reveal";
 import AppHeader from './components/AppHeader';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -12,19 +11,17 @@ import AppFooter from './components/AppFooter';
 
 function App() {
 	return (
-		<div className="bg-gradient-to-r from-neutral-100 to-white dark:from-slate-900 dark:to-slate-800 transition duration-300">
+		<div className="min-h-screen bg-gradient-to-br from-slate-100 to-white dark:from-slate-900 dark:to-slate-800 transition duration-300">
 			<Router>
 				<AppHeader />
-				<Zoom>
-					<About />
-				</Zoom>
-				<Experience />
-				<Education />
-				<SkillSet />
-				<Projects />
-				<AttentionSeeker effect='tada' duration={1000}>
-					<Contact />
-				</AttentionSeeker>
+				<main className="pt-14 md:pt-28 xl:pt-0 px-2 md:px-0">
+					<section id="about"><About /></section>
+					<section id="experience"><Experience /></section>
+					<section id="education"><Education /></section>
+					<section id="skillset"><SkillSet /></section>
+					<section id="projects"><Projects /></section>
+					<section id="contact"><Contact /></section>
+				</main>
 				<AppFooter />
 			</Router>
 		</div>

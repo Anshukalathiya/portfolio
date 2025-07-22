@@ -1,63 +1,97 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DarkModeToggle from "react-dark-mode-toggle";
 
+const navLinks = [
+  { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'skillset', label: 'Skill Set' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' },
+];
+
 const AppHeader = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [dark, setDark] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [dark, setDark] = useState(false);
+  const [active, setActive] = useState('about');
 
-    const toggleButton = () => {
-        setIsOpen(!isOpen);
+  useEffect(() => {
+    const handleScroll = () => {
+      const offsets = navLinks.map(link => {
+        const el = document.getElementById(link.id);
+        return el ? el.offsetTop - 100 : 0;
+      });
+      const scrollY = window.scrollY;
+      let current = 'about';
+      for (let i = 0; i < offsets.length; i++) {
+        if (scrollY >= offsets[i]) current = navLinks[i].id;
+      }
+      setActive(current);
     };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    const darkModeHandler = () => {
-        setDark(!dark);
-        document.body.classList.toggle("dark");
+  const handleNavClick = (id) => {
+    setIsOpen(false);
+    const el = document.getElementById(id);
+    if (el) {
+      window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
     }
+  };
 
-    return (
-        <nav class="bg-white relative dark:bg-black border-gray-400 w-full top-0 z-[1001]">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
-                <button onClick={toggleButton}
-                    type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  };
+
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 dark:bg-black/60 shadow-md transition-all">
+      <nav className="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+        {/* Mobile menu button - left side */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900">
+            <svg className="w-7 h-7 text-blue-700 dark:text-blue-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+
+        {/* Desktop navigation - center */}
+        <ul className={`hidden md:flex gap-8 font-medium text-lg justify-center flex-1`}> 
+          {navLinks.map(link => (
+            <li key={link.id}>
+              <button
+                className={`transition px-2 py-1 rounded-lg focus:outline-none ${active === link.id ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-bold' : 'hover:bg-blue-50 dark:hover:bg-blue-800 text-gray-700 dark:text-gray-200'}`}
+                onClick={() => handleNavClick(link.id)}
+              >
+                {link.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        {/* Dark mode toggle - right side */}
+        <div className="flex items-center">
+          <DarkModeToggle onChange={darkModeHandler} checked={dark} size={70} />
+        </div>
+      </nav>
+      {isOpen && (
+        <div className="md:hidden bg-white/90 dark:bg-black/90 px-4 pb-4 pt-2 shadow-lg">
+          <ul className="flex flex-col gap-2">
+            {navLinks.map(link => (
+              <li key={link.id}>
+                <button
+                  className={`w-full text-left px-2 py-2 rounded-lg ${active === link.id ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-bold' : 'hover:bg-blue-50 dark:hover:bg-blue-800 text-gray-700 dark:text-gray-200'}`}
+                  onClick={() => handleNavClick(link.id)}
+                >
+                  {link.label}
                 </button>
-
-                <div class={`w-full lg:w-auto lg:block ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
-                    <ul class="sticky top-1 font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-16 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-black lg:dark:bg-black dark:border-gray-700">
-                        <li>
-                            <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent" aria-current="page">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">EXPERIENCE</a>
-                        </li>
-                        <li>
-                            <a href="#education" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">EDUCATION</a>
-                        </li>
-                        <li>
-                            <a href="#skillset" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">SKILL SET</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div className="text-black dark:text-white absolute right-4 top-4 lg:top-2">
-                <DarkModeToggle
-                    onChange={darkModeHandler}
-                    checked={dark}
-                    size={80}
-                />
-            </div>
-        </nav>
-    )
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
+  );
 };
 
 export default AppHeader;

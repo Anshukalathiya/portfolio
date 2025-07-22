@@ -2,7 +2,7 @@ import { HiMiniArrowUpRight } from "react-icons/hi2";
 
 const ProjectsCard = props => {
     return (
-        <div class="m-7 break-words bg-white dark:bg-black text-black dark:text-white rounded-xl xl:mb-0 shadow-lg text-center items-center">
+        <div class="m-7 break-words bg-white transition hover:-translate-y-1 duration-200 dark:bg-black text-black dark:text-white rounded-xl xl:mb-0 shadow-lg text-center items-center">
             <a href={props.link} target="_blank" rel="noreferrer">
                 <div class="flex justify-center p-6 rounded-xl">
                     {props.image}

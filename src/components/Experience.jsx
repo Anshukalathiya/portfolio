@@ -4,7 +4,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Experience = () => {
     return (
-        <div id="experience" className='m-5 md:m-7 lg:m-20 pt-5'>
+        <div id="experience" className='m-5 md:m-7 lg:m-20'>
             <Slide>
                 <div>
                     <div class="group transition-all duration-300 ease-in-out">
@@ -20,14 +20,14 @@ const Experience = () => {
                     <div class="lg:flex justify-center m-7">
                         <ExperienceCard
                             jobicon={<FaChalkboardTeacher class="text-5xl m-auto" />}
-                            jobrole="AI Engineer"
+                            jobrole="Software Engineer"
                             jobtitle="Outlier"
                             jobdesc="Analyzed and executed comprehensive test data scenarios that validated core functionalities in Python. Innovated high-performance algorithms and Data Structures" />
 
                         <ExperienceCard
                             jobicon={<FaLaptopCode class="text-5xl m-auto" />}
                             jobrole="Full Stack Developer"
-                            jobtitle="eveIT"
+                            jobtitle="eveIT LLP"
                             jobdesc="Led 5+ pivotal projects and guided decision-making as part of a collaborative team to strategize and ensure the time commitment of deliverables." />
 
                         <ExperienceCard
