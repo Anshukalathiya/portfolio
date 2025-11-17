@@ -2,7 +2,7 @@ import React from "react";
 import Swal from 'sweetalert2'
 
 const Contact = () => {
-    // Removed unused variable 'result' to fix ESLint error
+    const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
