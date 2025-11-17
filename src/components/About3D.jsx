@@ -23,7 +23,11 @@ function Model({ open, hinge, ...props }) {
   })
 
   return (
-    <group ref={group} {...props} onPointerOver={(e) => (e.stopPropagation(), setHovered(true))} onPointerOut={(e) => setHovered(false)} dispose={null}>
+    <group ref={group} {...props} 
+      onPointerOver={(e) => { e.stopPropagation(); setHovered(true); }} 
+      onPointerOut={(e) => setHovered(false)} 
+      dispose={null}
+    >
       <three.group rotation-x={hinge} position={[0, -0.04, 0.41]}>
         <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
@@ -49,7 +53,7 @@ export default function About3D() {
 
   return (
     <div className="relative w-full h-[70vh] lg:h-[40vh] xl:h-screen overflow-hidden">
-      {/* Animated title */}
+  {/* Animated title */}
       <web.h1
         className="absolute top-1/2 left-1/2 text-2xl lg:text-5xl md:text-4xl font-bold text-gray-800 dark:text-blue-400 select-none pointer-events-none flex flex-col items-center"
         style={{
@@ -57,14 +61,14 @@ export default function About3D() {
           transform: props.open.to((o) => `translate3d(-50%, ${o * 50 - 100}px, 0)`)
         }}
       >
-        <p>// check env</p>
+        <p>check env</p>
 
         <svg className="w-8 h-8 mt-4 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </web.h1>
 
-      {/* 3D Canvas */}
+  {/* 3D Canvas */}
       <div className="absolute inset-0 w-full h-full">
         <Canvas
           dpr={[1, 2]}
@@ -79,7 +83,7 @@ export default function About3D() {
           <Suspense fallback={null}>
             <group
               rotation={[0, Math.PI, 0]}
-              onClick={(e) => (e.stopPropagation(), setOpen(!open))}
+              onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
               className="cursor-pointer"
             >
               <Model open={open} hinge={props.open.to([0, 1], [1.575, -0.425])} />
