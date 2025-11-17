@@ -51,7 +51,7 @@ export default function About3D() {
     <div className="relative w-full h-[70vh] lg:h-[40vh] xl:h-screen overflow-hidden">
       {/* Animated title */}
       <web.h1
-        className="absolute top-1/2 left-1/2 text-2xl lg:text-5xl md:text-4xl font-bold text-gray-800 dark:text-blue-400 select-none z-10 pointer-events-none flex flex-col items-center"
+        className="absolute top-1/2 left-1/2 text-2xl lg:text-5xl md:text-4xl font-bold text-gray-800 dark:text-blue-400 select-none pointer-events-none flex flex-col items-center"
         style={{
           opacity: props.open.to([0, 1], [1, 0]),
           transform: props.open.to((o) => `translate3d(-50%, ${o * 50 - 100}px, 0)`)

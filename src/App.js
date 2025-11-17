@@ -8,6 +8,7 @@ import SkillSet from './components/SkillSet';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import AppFooter from './components/AppFooter';
+import WebChat from './components/WebChat';
 
 function App() {
 	return (
@@ -20,10 +21,12 @@ function App() {
 					<section id="education"><Education /></section>
 					<section id="skillset"><SkillSet /></section>
 					<section id="projects"><Projects /></section>
-					<section id="contact"><Contact /></section>
+					<section id="contact"><Contact /></section>					
 				</main>
 				<AppFooter />
+				
 			</Router>
+			<WebChat />
 		</div>
 	);
 }

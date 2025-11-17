@@ -14,9 +14,9 @@
 }
 
 
-.App-link {
-  /* color: #61dafb; */
-}
+/* .App-link {
+  color: #61dafb;
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -24,5 +24,84 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* WebChat Header styling - Force white text */
+div[style*="background-color: rgb(37, 99, 235)"],
+div[style*="background-color:#2563EB"],
+div[style*="background-color: #2563EB"] {
+  color: #FFFFFF !important;
+}
+
+div[style*="background-color: rgb(37, 99, 235)"] *,
+div[style*="background-color:#2563EB"] *,
+div[style*="background-color: #2563EB"] * {
+  color: #FFFFFF !important;
+}
+
+div[style*="background-color: rgb(37, 99, 235)"] button,
+div[style*="background-color:#2563EB"] button,
+div[style*="background-color: #2563EB"] button,
+div[style*="background-color: rgb(37, 99, 235)"] svg,
+div[style*="background-color:#2563EB"] svg,
+div[style*="background-color: #2563EB"] svg {
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+}
+
+/* Responsive WebChat Fab Button */
+.webchat-fab-button {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .webchat-fab-button {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .webchat-fab-button {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    min-height: 64px !important;
+  }
+}
+
+/* Responsive WebChat Container */
+.webchat-container {
+  width: calc(100vw - 40px) !important;
+  max-width: 400px !important;
+  height: calc(100vh - 140px) !important;
+  max-height: 500px !important;
+  right: 20px !important;
+  bottom: 80px !important;
+}
+
+/* Tablet screens */
+@media (min-width: 768px) {
+  .webchat-container {
+    width: 380px !important;
+    height: 480px !important;
+    bottom: 90px !important;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .webchat-container {
+    width: 400px !important;
+    height: 500px !important;
   }
 }
